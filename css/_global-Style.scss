@@ -1,0 +1,157 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+// GLOBAL STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+// VARIABLE FONTS
+$Poppins: "Poppins",
+san cursive;
+
+$Ubuntu: "Ubuntu",
+cursive;
+
+// VARIABLE COLOR
+$Color-Primary:#DF2E1C;
+
+$Color-Menu: #F73620;
+
+$Color-Hover: #000D1C;
+
+
+// ALL SIMILAR CONTENT STYLING CODE
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+// SECTION
+section {
+    padding: 100px 0;
+}
+
+// TITLE STYLING
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: $Poppins;
+
+    .title {
+        position: relative;
+        font-family: $Ubuntu;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 240px;
+            height: 3px;
+            bottom: 0px;
+            left: 50%;
+            background: $Color-Menu;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: $Color-Primary;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// DISPLAY FLEX STYLING GOBLAL
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $Color-Menu;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 9999;
+    font-size: 1.875em;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// CAROUSEL STYLING
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid $Color-Primary !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: $Color-Menu !important;
+
+}
+
+// CONTACT ME
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 23px;
+}

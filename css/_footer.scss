@@ -1,0 +1,18 @@
+// FOOTER STYLING
+footer {
+    background: #111;
+    padding: 25px 23px;
+    color: #fff;
+    text-align: center;
+
+    span {
+        a {
+            color: $Color-Menu;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

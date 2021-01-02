@@ -1,0 +1,475 @@
+// ----- MAIN STYLING -----
+main {
+
+    // HOME SECTION STYLING
+    .home {
+        display: flex;
+        background: url("../assets/Banner/Banner_Mask.gif") no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        min-height: 500px;
+        font-family: $Ubuntu;
+
+        .max-width {
+            margin: auto 0 auto 40px;
+
+            .home-content {
+                .text_1 {
+                    font-size: 1.688em;
+                }
+
+                .text_2 {
+                    font-size: 4.688em;
+                    font-weight: 600;
+                    margin-left: -3px;
+                }
+
+                .text_3 {
+                    font-size: 2.5em;
+                    margin: 5px 0;
+
+                    span {
+                        color: $Color-Primary;
+                        font-weight: 500;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    background: $Color-Menu;
+                    color: #fff;
+                    font-size: 1.563em;
+                    padding: 12px 36px;
+                    margin-top: 20px;
+                    border-radius: 6px;
+                    border: 2px solid $Color-Menu;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $Color-Menu;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // ABOUT SECTION STYLING
+    .about {
+
+        .title::after {
+            content: "Who I Am";
+        }
+
+        .about-content {
+            .left {
+                width: 45%;
+
+                img {
+                    height: 400px;
+                    width: 400px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
+
+            .right {
+                width: 55%;
+
+                .text {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                    span {
+                        color: $Color-Primary;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                a {
+                    display: inline-block;
+                    background: $Color-Menu;
+                    color: #fff;
+                    font-size: 1.25em;
+                    font-weight: 500;
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    border-radius: 6px;
+                    border: 2px solid $Color-Menu;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $Color-Menu;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // SERVICES SECTION STYLING
+    .services {
+        background: #111;
+        color: #fff;
+
+        .title::after {
+            background: #111;
+            color: #fff;
+            content: "What I Provide";
+        }
+
+        .serv-content {
+            .card {
+                width: calc(33% - 20px);
+                background: #222;
+                text-align: center;
+                border-radius: 6px;
+                padding: 20px 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: $Color-Menu;
+                }
+
+                &:hover i {
+                    color: #fff !important;
+                    transition: color 0.3s ease;
+
+                }
+
+                &:hover .box {
+                    transform: scale(1.05);
+                }
+
+                .box {
+                    transition: all 0.3s ease;
+
+                    i {
+                        font-size: 3.125em;
+                        color: $Color-Menu;
+                    }
+
+                    .text {
+                        font-size: 1.563em;
+                        font-weight: 500;
+                        margin: 10px 0 7px 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // SKILLS SECTION STYLING
+    .skills {
+        .title::after {
+            content: "What I Know";
+        }
+
+        .skills-content {
+            .column {
+                width: calc(50% - 30px);
+            }
+
+            .left {
+                .text {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                a {
+                    display: inline-block;
+                    background: $Color-Menu;
+                    color: #fff;
+                    font-size: 1.125em;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    margin-top: 20px;
+                    border-radius: 6px;
+                    border: 2px solid $Color-Menu;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $Color-Menu;
+                        background: none;
+                    }
+                }
+            }
+
+            .right {
+                .bars {
+                    margin-bottom: 15px;
+
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 5px;
+
+                        span {
+                            font-weight: 500;
+                            font-size: 1.125em;
+                        }
+                    }
+
+                    .line {
+                        height: 5px;
+                        width: 100%;
+                        background: lightgray;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            // width: 80%;
+                            left: 0;
+                            top: 0;
+                            background: $Color-Menu;
+                        }
+                    }
+
+                    .html::before {
+                        width: 90%;
+                    }
+
+                    .css::before {
+                        width: 60%;
+                    }
+
+                    .js::before {
+                        width: 80%;
+                    }
+
+                    .php::before {
+                        width: 50%;
+                    }
+
+                    .mysql::before {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    // TEAMS SECTION STYLING
+    .teams {
+        background: #111;
+        color: #fff;
+
+        .title::after {
+            content: "Who Job With Me";
+            background: #111;
+            color: #fff;
+        }
+
+        .carousel {
+            .card {
+                background: #222;
+                border-radius: 6px;
+                padding: 25px 35px;
+                text-align: center;
+                transition: all 0.3s ease;
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 5px solid $Color-Primary;
+                    }
+
+                    .text {
+                        font-size: 1.563em;
+                        font-weight: 500;
+                        margin: 10px 0 7px 0;
+                    }
+                }
+
+                &:hover {
+                    background: $Color-Menu;
+                }
+
+                &:hover .box {
+                    transform: scale(1.05);
+                }
+
+                &:hover img {
+                    border: 5px solid #fff;
+                    transition: color 0.3s ease;
+                }
+            }
+        }
+    }
+
+    // CONTACT STYLING
+    .contact {
+        .title::after {
+            content: "Get In Touch";
+        }
+
+        .contact-content {
+            .column {
+                width: calc(50% - 30px);
+            }
+
+            .left {
+                .text {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                .icons {
+                    margin: 10px 0;
+
+                    .row {
+                        display: flex;
+                        height: 65px;
+                        align-items: center;
+                        // margin-left: 30px;
+
+                        i {
+                            font-size: 1.563em;
+                            color: $Color-Menu;
+                        }
+
+                        .info {
+                            margin-left: 30px;
+
+                            .head,
+                            .head-social {
+                                font-weight: 500;
+                            }
+
+                            .head-social {
+                                margin-left: 18px;
+                            }
+
+                            .sub-title {
+                                color: #333;
+                            }
+
+                            .social {
+                                i {
+                                    font-size: 1.875em;
+                                    color: $Color-Menu;
+                                    margin: 10px 0 0 18px;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.25);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                .text {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                form {
+                    .fields {
+                        display: flex;
+                    }
+
+                    .field {
+
+                        input {
+                            height: 100%;
+                            width: 100%;
+                            border: 1px solid lightgray;
+                            border-radius: 6px;
+                            outline: none;
+                            padding: 0 15px;
+                            font-size: 1.063em;
+                            font-family: $Poppins;
+                        }
+                    }
+
+                    .name {
+                        margin-right: 10px;
+                    }
+
+                    .email {
+                        margin-left: 10px;
+                    }
+
+                    .textarea {
+                        height: 80px;
+                        width: 100%;
+
+                        textarea {
+                            height: 100%;
+                            width: 100%;
+                            border: 1px solid lightgray;
+                            border-radius: 6px;
+                            outline: none;
+                            padding: 0 15px;
+                            font-size: 1.063em;
+                            font-family: $Poppins;
+                            padding-top: 10px;
+                            resize: none;
+                        }
+                    }
+
+                    .button {
+                        height: 47px;
+                        width: 170px;
+
+                        button {
+                            width: 100%;
+                            height: 100%;
+                            background: $Color-Menu;
+                            color: #fff;
+                            font-size: 1.125em;
+                            font-weight: 500;
+                            padding: 8px 16px;
+                            margin-top: 20px;
+                            border-radius: 6px;
+                            border: 2px solid $Color-Menu;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $Color-Menu;
+                                background: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

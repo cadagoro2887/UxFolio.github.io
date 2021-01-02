@@ -1,0 +1,203 @@
+// RESPONSIVE MEDIA QUERY START
+// ------ MEDIA QUERY 1104PX
+@media (max-width: 1104px) {
+
+    .navbar {
+        .menu {
+            li {
+                a:hover {
+                    color: $Color-Menu !important;
+                }
+            }
+        }
+
+        .menu-btn {
+            i:hover {
+                color: $Color-Menu !important;
+            }
+        }
+    }
+
+    .home {
+        .max-width {
+            margin-left: 0px !important;
+        }
+    }
+
+    .about .about-content {
+        .left {
+            img {
+                height: 350px !important;
+                width: 350px !important;
+            }
+        }
+    }
+}
+
+// ------ MEDIA QUERY 991PX
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px !important;
+    }
+
+    .about .about-content {
+        .column {
+            width: 50% !important;
+        }
+    }
+
+}
+
+// ------ MEDIA QUERY 947PX
+@media (max-width: 947px) {
+    .max-width {
+        padding: 0 50px !important;
+    }
+
+    // NAVBAR
+    .navbar {
+        .menu {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            background: #111;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+
+            li {
+                display: block !important;
+
+                a {
+                    display: inline-block !important;
+                    margin: 20px 0;
+                    font-size: 1.563em !important;
+                }
+            }
+        }
+
+        .menu-btn {
+            display: block;
+            z-index: 999;
+        }
+
+        .menu-btn i.active::before {
+            content: "\f00d";
+        }
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    // ---END
+
+    // HOME
+    .home .home-content {
+        .text_2 {
+            font-size: 4.375em !important;
+        }
+
+        .text_3 {
+            font-size: 2.188em !important;
+        }
+
+        a {
+            font-size: 1.438em !important;
+            padding: 10px 30px;
+        }
+    }
+
+    .max-width {
+        max-width: 800px;
+    }
+
+    // ABOUT
+    .about .about-content {
+        .column {
+            width: 100% !important;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 60px;
+        }
+
+        .right {
+            flex: 100%;
+        }
+    }
+
+    .services {
+        .serv-content {
+            .card {
+                width: 100% !important;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .skills {
+        .skills-content {
+            .column {
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .contact {
+        .contact-content {
+            .column {
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+// ------ MEDIA QUERY 690PX
+@media (max-width: 690px) {
+
+    .max-width {
+        padding: 0 23px !important;
+    }
+
+    // HOME
+    .home .home-content {
+        .text_2 {
+            font-size: 3.75em !important;
+        }
+
+        .text_3 {
+            font-size: 2em !important;
+        }
+
+        a {
+            font-size: 1.25em !important;
+        }
+    }
+}
+
+// ------ MEDIA QUERY 500PX
+@media (max-width: 500px) {
+
+    .max-width {
+        padding: 0 23px !important;
+    }
+
+    // HOME
+    .home .home-content {
+        .text_2 {
+            font-size: 3.125em !important;
+        }
+
+        .text_3 {
+            font-size: 1.688em !important;
+        }
+    }
+
+}
